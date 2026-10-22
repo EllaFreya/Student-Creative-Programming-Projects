@@ -1,0 +1,64 @@
+//Name: Ella Murphy
+//Date: 20/10/2026
+//Purpose: Creating a scene with a cat and mouse
+
+function setup(){
+  createCanvas(600,400);
+}
+function draw(){
+  background(104, 63, 143);
+  noCursor()
+  Cat();
+  Mouse(mouseX,mouseY);
+  
+}
+function Cat(){
+  strokeWeight(2)
+  fill(92, 76, 56);
+  triangle(215,160,210,60,290,127);
+  triangle(385,160,370,60,300,127);
+  fill(250, 215, 243);
+  triangle(220,90,225,135,250,120);
+  triangle(365,85,330,135,370,130);
+  fill(92, 76, 56);
+  circle(300,200,200);
+  fill(0);
+  triangle(270,105,320,102,298,170);
+  ellipse(295,105,45,10);
+  triangle(285,215,300,235,315,215);
+  triangle(245,180,260,180,260,190);
+  triangle(330,180,355,180,340,190);
+  ellipse(270,190,30,40);
+  ellipse(330,190,30,40);
+  fill(255);
+ ellipse(270,190,20,30);
+  ellipse(330,190,20,30);
+  
+  if(mouseX>200 && mouseX<400 && mouseY>60 && mouseY<300)
+  {
+  
+    fill(0);
+    arc(300, 235, 50, 60, 0,PI); //smile
+    fill(250, 215, 243);
+    arc(300, 240, 35, 40, 0,PI);
+  }
+}
+function Mouse(x,y){
+  strokeWeight(0);
+  fill(196, 190, 195);
+  ellipse(x+5,y-16,20);
+  ellipse(x+20,y-13,20);
+  fill(250, 215, 243);
+  ellipse(x-35,y,40,5)
+  ellipse(x+5,y-17,10);
+  ellipse(x+20,y-13,10);
+  fill(196, 190, 195);
+  ellipse(x,y,60,40); //body
+  fill(0);
+  circle(x+5,y-5,10);
+  circle(x+20,y-5,10);
+  ellipse(x+12,y+2,10,5);
+  fill(255);
+  circle(x+5,y-5,5);
+  circle(x+20,y-5,5);
+}
