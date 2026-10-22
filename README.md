@@ -1,2 +1,3 @@
 # Student-Projects
 A collection of student projects i made throughout my time studying in SETU
+This project is titled 'Cat and Mouse' and creates a sketch of a mouse and a cat in p5.js in which the mouse moves with mouseX and mouseY, making the cat smile when moving within its vicinity. I created this project in order to practice using mouseX and mouseY commands and to showcase my skills in p5.js. This code was created in p5.js Online Editor and is written in Javascript. Through creating this project i developed my javascript skills, particularly in using coordinates to create images and use 'if' statements.
